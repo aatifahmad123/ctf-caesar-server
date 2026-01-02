@@ -1,3 +1,5 @@
+![AWS EC2 Instance Running](./instance.png)
+
 # Caesar Cipher TCP Challenge Server
 
 A lightweight, CryptoHack-style **TCP challenge server** built using pure Python sockets.
