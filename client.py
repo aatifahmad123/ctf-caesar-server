@@ -2,7 +2,7 @@ import json
 
 import pwn
 
-r = pwn.remote("65.0.122.230", 6000)
+r = pwn.remote("crypto-aatif.duckdns.org", 6000)
 
 print(r.recvline().decode())
 

@@ -14,6 +14,15 @@ This project was built end-to-end as a hands-on learning exercise, including rea
 
 ---
 
+## Live Challenge Endpoint
+
+```
+Host: crypto-aatif.duckdns.org
+Port: 6000
+```
+
+---
+
 ## Features
 
 * Raw TCP server (no HTTP, no frameworks)
@@ -73,7 +82,7 @@ PORT = 6000
 ## Connecting Using netcat
 
 ```bash
-nc <SERVER_IP> 6000
+nc crypto-aatif.duckdns.org 6000
 ```
 
 Then send:
@@ -90,7 +99,7 @@ Then send:
 import json
 from pwn import *
 
-r = remote("<SERVER_IP>", 6000)
+r = remote("crypto-aatif.duckdns.org", 6000)
 
 print(r.recvline().decode())
 
